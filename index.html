@@ -50,17 +50,27 @@
             .hero { flex-direction: column; text-align: center; }
             .hero-text { max-width: 100%; margin-bottom: 30px; } 
             
-        /* Services Section CSS */
-        .services { padding: 50px 10%; background-color: #f4f7f6; text-align: center; }
-        .services h3 { color: #0b3d60; font-size: 32px; margin-bottom: 40px; }
+        /* 100% Professional & Animated Services Section */
+        .services { padding: 60px 10%; background-color: #f4f7f6; text-align: center; }
+        .services h3 { color: #0b3d60; font-size: 36px; margin-bottom: 50px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Desktop par 3 cards ek line mein lane ke liye: */
         .service-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
-        .service-card { background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 30%; min-width: 280px; overflow: hidden; transition: transform 0.3s ease; text-align: left; }
-        .service-card:hover { transform: translateY(-10px); }
-        .service-img { width: 100%; height: 200px; object-fit: cover; }
-        .service-content { padding: 25px; }
-        .service-content h4 { color: #0b3d60; margin-top: 0; font-size: 22px; margin-bottom: 10px; }
-        .service-content p { color: #666; font-size: 15px; line-height: 1.6; margin: 0; }
-            
+        
+        /* Card ka size (width: 30%) aur Animation ki bunyad (transition): */
+        .service-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); width: 30%; min-width: 300px; overflow: hidden; transition: all 0.4s ease; text-align: left; border: 1px solid #eee; }
+        
+        /* HOVER ANIMATION: Mouse upar aane par card upar uthega aur shadow barhega: */
+        .service-card:hover { transform: translateY(-12px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); border-bottom: 4px solid #25D366; }
+        
+        /* Tasweer ki setting aur Hover par halka sa zoom: */
+        .service-img { width: 100%; height: 220px; object-fit: cover; transition: transform 0.5s ease; }
+        .service-card:hover .service-img { transform: scale(1.05); }
+        
+        /* Text ki setting */
+        .service-content { padding: 30px; position: relative; z-index: 1; background: white; }
+        .service-content h4 { color: #0b3d60; margin-top: 0; font-size: 24px; margin-bottom: 12px; font-weight: 700; }
+        .service-content p { color: #555; font-size: 16px; line-height: 1.7; margin: 0; }    
         }
     </style>
 </head>
